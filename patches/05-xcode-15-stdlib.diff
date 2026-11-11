@@ -1,0 +1,12 @@
+diff -ruN qt-everywhere-src-5.15.13.orig/qtdeclarative/src/quick/items/qquickshadereffectsource.cpp qt-everywhere-src-5.15.13/qtdeclarative/src/quick/items/qquickshadereffectsource.cpp
+--- qt-everywhere-src-5.15.13.orig/qtdeclarative/src/quick/items/qquickshadereffectsource.cpp	2024-01-04 19:21:48
++++ qt-everywhere-src-5.15.13/qtdeclarative/src/quick/items/qquickshadereffectsource.cpp	2024-03-17 18:54:50
+@@ -37,6 +37,8 @@
+ **
+ ****************************************************************************/
+ 
++#include <utility>
++
+ #include "qquickshadereffectsource_p.h"
+ 
+ #include "qquickitem_p.h"

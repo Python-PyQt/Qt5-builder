@@ -1,0 +1,11 @@
+diff -ruN qt-everywhere-src-5.15.16.orig/qtwebengine/src/3rdparty/chromium/build/config/compiler/BUILD.gn qt-everywhere-src-5.15.16/qtwebengine/src/3rdparty/chromium/build/config/compiler/BUILD.gn
+--- qt-everywhere-src-5.15.16.orig/qtwebengine/src/3rdparty/chromium/build/config/compiler/BUILD.gn	2023-11-09 12:02:51
++++ qt-everywhere-src-5.15.16/qtwebengine/src/3rdparty/chromium/build/config/compiler/BUILD.gn	2024-12-01 23:33:39
+@@ -318,6 +318,7 @@
+       "-Wno-parentheses-equality",
+       "-Wno-tautological-compare",
+       "-Wno-thread-safety-attributes",
++      "-Wno-enum-constexpr-conversion",
+     ]
+   }
+ 

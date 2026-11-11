@@ -1,0 +1,11 @@
+diff -ruN qt-everywhere-src-5.15.16.orig/qtwebengine/src/3rdparty/chromium/content/browser/BUILD.gn qt-everywhere-src-5.15.16/qtwebengine/src/3rdparty/chromium/content/browser/BUILD.gn
+--- qt-everywhere-src-5.15.16.orig/qtwebengine/src/3rdparty/chromium/content/browser/BUILD.gn	2023-11-09 12:02:51
++++ qt-everywhere-src-5.15.16/qtwebengine/src/3rdparty/chromium/content/browser/BUILD.gn	2024-12-01 15:54:22
+@@ -166,6 +166,7 @@
+     "//components/services/storage/dom_storage:local_storage_proto",
+     "//components/services/storage/public/cpp",
+     "//components/services/storage/public/mojom",
++    "//components/spellcheck:buildflags",
+     "//components/system_media_controls",
+     "//components/tracing:startup_tracing",
+     "//components/ui_devtools",

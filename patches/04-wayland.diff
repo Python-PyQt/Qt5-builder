@@ -1,0 +1,22 @@
+diff -ruN qt-everywhere-src-5.15.11.orig/qtwayland/src/client/configure.json qt-everywhere-src-5.15.11/qtwayland/src/client/configure.json
+--- qt-everywhere-src-5.15.11.orig/qtwayland/src/client/configure.json	2023-06-09 15:09:21.000000000 +0100
++++ qt-everywhere-src-5.15.11/qtwayland/src/client/configure.json	2023-11-15 14:03:54.393809852 +0000
+@@ -138,7 +138,7 @@
+                 "include": [
+                     "EGL/egl.h",
+                     "EGL/eglext.h",
+-                    "drm_fourcc.h"
++                    "libdrm/drm_fourcc.h"
+                 ],
+                 "main": [
+                     "#ifdef EGL_LINUX_DMA_BUF_EXT",
+@@ -168,7 +168,8 @@
+                     "exportAllocInfo.handleTypes = VK_EXTERNAL_MEMORY_HANDLE_TYPE_OPAQUE_FD_BIT_KHR;",
+                     "return 0;"
+                 ]
+-            }
++            },
++            "use": "wayland-client"
+         },
+         "egl_1_5-wayland": {
+             "label": "EGL 1.5 with Wayland Platform",
